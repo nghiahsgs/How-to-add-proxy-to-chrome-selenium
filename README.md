@@ -4,7 +4,7 @@ How to add proxy to chrome selenium
 
 To add a proxy to Chrome Selenium, you can use the webdriver module in Python and specify the proxy settings in the Chrome options. Here's an example code snippet that demonstrates how to do this:
 
-```
+```python
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
@@ -30,7 +30,7 @@ Finally, we create a new WebDriver object with the ChromeOptions object and navi
 
 Note that you can also specify additional proxy settings, such as username and password, by adding them to the add_argument() method. For example:
 
-```
+```python
 # Set the proxy server, port number, username, and password in the ChromeOptions object
 chrome_options.add_argument('--proxy-server={0}:{1}'.format(PROXY_SERVER, PROXY_PORT))
 chrome_options.add_argument('--proxy-auth={0}:{1}'.format(PROXY_USERNAME, PROXY_PASSWORD))
